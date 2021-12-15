@@ -31,7 +31,7 @@
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                     <a class="text-indigo-600 hover:text-indigo-900"
-                                       href="http://localhost:8000/post/{{ $allPost->slug }}">http://localhost:8000/post/{{ $allPost->slug }}</a>
+                                       href="{{ route('post', $allPost->slug) }}">http://unsafe.cedricfortuin.com/post/{{ $allPost->slug }}</a>
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                     {{ date('d/m/Y H:i', strtotime($allPost->created_at)) }}
